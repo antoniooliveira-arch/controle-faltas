@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "nodejs"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "rewrite",
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "cleanOutputs": false
+}

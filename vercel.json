@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "nodejs"
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
@@ -12,6 +12,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "cleanOutputs": false
+  ]
 }
